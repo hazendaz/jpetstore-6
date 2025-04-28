@@ -15,9 +15,9 @@
  */
 package org.mybatis.jpetstore.web.configuration;
 
-import javax.servlet.ServletContextEvent;
-import javax.servlet.ServletContextListener;
-import javax.servlet.annotation.WebListener;
+import jakarta.servlet.ServletContextEvent;
+import jakarta.servlet.ServletContextListener;
+import jakarta.servlet.annotation.WebListener;
 
 /**
  * The Class StaxFactoryInitializationListener.
@@ -29,9 +29,9 @@ public class StaxFactoryInitializationListener implements ServletContextListener
   public void contextInitialized(ServletContextEvent sce) {
     // Force Java 17 / Payara to explicitly use the JDK's built-in StAX factory
     // instead of searching via the broken OSGi/HK2 service loader context.
-    System.setProperty("javax.xml.stream.XMLInputFactory", "com.sun.xml.internal.stream.XMLInputFactoryImpl");
-    System.setProperty("javax.xml.stream.XMLOutputFactory", "com.sun.xml.internal.stream.XMLOutputFactoryImpl");
-    System.setProperty("javax.xml.stream.XMLEventFactory", "com.sun.xml.internal.stream.events.XMLEventFactoryImpl");
+    System.setProperty("jakarta.xml.stream.XMLInputFactory", "com.sun.xml.internal.stream.XMLInputFactoryImpl");
+    System.setProperty("jakarta.xml.stream.XMLOutputFactory", "com.sun.xml.internal.stream.XMLOutputFactoryImpl");
+    System.setProperty("jakarta.xml.stream.XMLEventFactory", "com.sun.xml.internal.stream.events.XMLEventFactoryImpl");
   }
 
   @Override
