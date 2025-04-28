@@ -22,7 +22,7 @@
 	<display-name>JPetStore</display-name>
 	<description>Online Pet Store Sample Application</description>
 	<context-param>
-		<param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+		<param-name>jakarta.servlet.jsp.jstl.fmt.localizationContext</param-name>
 		<param-value>StripesResources</param-value>
 	</context-param>
 	<listener>
