@@ -1,5 +1,5 @@
 /*
- *    Copyright 2010-2022 the original author or authors.
+ *    Copyright 2010-2025 the original author or authors.
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
  *    you may not use this file except in compliance with the License.
@@ -28,7 +28,6 @@ public class Item implements Serializable {
   private static final long serialVersionUID = -2159121673445254631L;
 
   private String itemId;
-  private String productId;
   private BigDecimal listPrice;
   private BigDecimal unitCost;
   private int supplierId;
