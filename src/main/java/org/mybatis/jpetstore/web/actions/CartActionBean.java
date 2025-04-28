@@ -15,9 +15,9 @@
  */
 package org.mybatis.jpetstore.web.actions;
 
-import java.util.Iterator;
+import jakarta.servlet.http.HttpServletRequest;
 
-import javax.servlet.http.HttpServletRequest;
+import java.util.Iterator;
 
 import net.sourceforge.stripes.action.ForwardResolution;
 import net.sourceforge.stripes.action.Resolution;
