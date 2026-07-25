@@ -23,7 +23,9 @@
 
     <table>
         <tr>
-            <th align="center" colspan="2">Order #${order.orderId} ${order.formattedOrderDate}</th>
+            <th class="center-header" colspan="2">
+                Order #${order.orderId} ${order.formattedOrderDate}
+            </th>
         </tr>
         <tr>
             <th colspan="2">Payment Details</th>
@@ -130,19 +132,19 @@
                     <c:forEach var="lineItem" items="${order.lineItems}">
                         <tr>
                             <td><a href="${pageContext.request.contextPath}/catalog/viewItem?itemId=${lineItem.item.itemId}">${lineItem.item.itemId}</a></td>
-                            <td><c:if test="${lineItem.item != null}">
-                                ${lineItem.item.attribute1}
-                                ${lineItem.item.attribute2}
-                                ${lineItem.item.attribute3}
-                                ${lineItem.item.attribute4}
-                                ${lineItem.item.attribute5}
-                                ${lineItem.item.product.name}
+                            <td>
+                                <c:if test="${lineItem.item != null}">
+                                    ${lineItem.item.attribute1}
+                                    ${lineItem.item.attribute2}
+                                    ${lineItem.item.attribute3}
+                                    ${lineItem.item.attribute4}
+                                    ${lineItem.item.attribute5}
+                                    ${lineItem.item.product.name}
                                 </c:if>
                                 <c:if test="${lineItem.item == null}">
                                     <i>{description unavailable}</i>
                                 </c:if>
                             </td>
-
                             <td>${lineItem.quantity}</td>
                             <td>$<fmt:formatNumber value="${lineItem.unitPrice}" pattern="#,##0.00" /></td>
                             <td>$<fmt:formatNumber value="${lineItem.total}" pattern="#,##0.00" /></td>
