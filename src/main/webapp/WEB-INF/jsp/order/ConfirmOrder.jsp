@@ -23,10 +23,11 @@
 
         <table>
             <tr>
-                <th align="center" colspan="2">
-                    <font size="4"><b>Order</b></font>
-                    <br />
-                    <font size="3"><b>${order.formattedOrderDate}</b></font>
+                <th class="center-header" colspan="2">
+                    <h2 class="order-title">Order</h2>
+                    <div class="order-date">
+                        ${order.formattedOrderDate}
+                    </div>
                 </th>
             </tr>
 

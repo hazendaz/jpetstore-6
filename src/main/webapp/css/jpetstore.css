@@ -318,3 +318,16 @@ body>#Banner {
   background-color:#ccc;
   text-align:left;
 }
+
+.center-header {
+    text-align: center;
+}
+
+.order-title {
+    margin: 0;
+}
+
+.order-date {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
